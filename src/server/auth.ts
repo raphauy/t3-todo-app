@@ -51,7 +51,7 @@ export const authOptions: NextAuthOptions = {
         host: process.env.EMAIL_SERVER || 'http://localhost:3000',
         port: 587,
         auth: {
-          user: 'apiKey',
+          user: process.env.EMAIL_FROM,
           pass: process.env.EMAIL_PASSWORD || "",
         },
       },
