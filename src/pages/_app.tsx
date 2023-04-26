@@ -6,7 +6,6 @@ import { api } from "~/utils/api";
 
 import "~/styles/globals.css";
 import { Toaster } from "react-hot-toast";
-import NavBar from "~/component/NavBar";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
