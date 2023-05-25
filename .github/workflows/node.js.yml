@@ -27,6 +27,6 @@ jobs:
     - run: pnpm i
     - run: pnpm run build
       env:
-        DATABASE_URL: ${{ vars.DATABASE_URL }}
-        NEXTAUTH_SECRET: ${{ vars.NEXTAUTH_SECRET }}
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET }}
 
