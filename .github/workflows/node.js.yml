@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-    environment: Production
+    environment: production
 
     strategy:
       matrix:
