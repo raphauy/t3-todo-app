@@ -26,3 +26,6 @@ jobs:
         cache: 'pnpm'
     - run: pnpm i
     - run: pnpm run build
+      env:
+        DATABASE_URL: ${{ env.DATABASE_URL }}
+
