@@ -34,5 +34,6 @@ jobs:
         EMAIL_FROM: ${{ vars.EMAIL_FROM }}
         EMAIL_PORT: ${{ vars.EMAIL_PORT }}
         EMAIL_SERVER: ${{ vars.EMAIL_SERVER }}
-        NODE_ENV: ${{ vars.NODE_ENV }}        
+        NODE_ENV: ${{ vars.NODE_ENV }}       
+    - run: pm2 reload todolist
 
