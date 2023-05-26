@@ -35,6 +35,7 @@ jobs:
         EMAIL_PORT: ${{ vars.EMAIL_PORT }}
         EMAIL_SERVER: ${{ vars.EMAIL_SERVER }}
         NODE_ENV: ${{ vars.NODE_ENV }}       
+    - run: pm2 stop todolist
     - run: pm2 start ecosystem.config.js
       env:
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
