@@ -32,5 +32,5 @@ jobs:
         cache: 'pnpm'
     - run: pnpm i
     - run: pnpm run build
-    - run: pm2 stop todolist
+#    - run: pm2 stop todolist
     - run: pm2 start ecosystem.config.js
