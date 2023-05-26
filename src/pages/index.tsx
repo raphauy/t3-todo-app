@@ -36,7 +36,7 @@ const Home: NextPage = () => {
         <div className="w-full text-center flex-grow flex items-center justify-center">
           {sessionData ? (
             <div className="flex 2xl:w-1/3 xl:w-1/2 lg:w-1/2 md:w-4/5 w-full mx-3 flex-col gap-4 rounded-xl bg-white/10 p-4 text-white">
-              <p className="text-xl font-bold underline text-center">ToDo List</p>
+              <p className="text-xl font-bold underline text-center">ToDo List V2</p>
               <Todos />
               <CreateTodo />
             </div>
