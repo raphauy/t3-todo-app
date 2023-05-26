@@ -36,4 +36,13 @@ jobs:
         EMAIL_SERVER: ${{ vars.EMAIL_SERVER }}
         NODE_ENV: ${{ vars.NODE_ENV }}       
     - run: pm2 reload todolist
+      env:
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET }}
+        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        NEXTAUTH_URL: ${{ vars.NEXTAUTH_URL }}
+        EMAIL_FROM: ${{ vars.EMAIL_FROM }}
+        EMAIL_PORT: ${{ vars.EMAIL_PORT }}
+        EMAIL_SERVER: ${{ vars.EMAIL_SERVER }}
+        NODE_ENV: ${{ vars.NODE_ENV }}       
 
