@@ -41,7 +41,7 @@ const Home: NextPage = () => {
               <CreateTodo />
             </div>
         ) : <div className="flex-col text-white text-zinc-400xl pb-24">
-              <div className="text-5xl font-extrabold m-2">Welcome to Todo List App!</div>
+              <div className="text-5xl font-extrabold m-2">Welcome to the new Todo List App!</div>
               <div className="text-3xl font-extrabold text-gray-500">Developed with the T3 stack (Next.js, Prisma, and tRPC).</div>
               <button className="w-full rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium 
                       text-white hover:bg-blue-800 focus:outline-none focus:ring-4 
